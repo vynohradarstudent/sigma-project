@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    background: rgb(80,80,80);
+    background: radial-gradient(circle, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register{
+    border: 3px green solid;
+    padding: 10px;
+    margin: 50px;
+    background: black;
+    color: white;
+    width: 450px;
+    height: 400px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    flex-direction: column;
+}
+.register input{
+    color: white;
+    background-color: darkgreen;
+    width: 200px;
+    height: 30px;
+    border: 2px green solid;
+    border-radius: 30px;
+}
+input::placeholder {
+    font-size: 15px;
+    color: white;
+}
+
+.register button{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px green solid;
+    background-color: darkgreen;
+    color: white;
+}
