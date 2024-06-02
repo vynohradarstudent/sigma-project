@@ -7,7 +7,7 @@ body{
     align-items: center;
 }
 .register{
-    border: 3px white solid;
+    border: 3px green solid;
     padding: 10px;
     margin: 50px;
     background: black;
@@ -23,5 +23,24 @@ body{
     flex-direction: column;
 }
 .register input{
+    color: white;
+    background-color: darkgreen;
     width: 200px;
+    height: 30px;
+    border: 2px green solid;
+    border-radius: 30px;
+}
+input::placeholder {
+    font-size: 15px;
+    color: white;
+}
+
+
+.register button{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px green solid;
+background-color: darkgreen;
+    color: white;
 }
