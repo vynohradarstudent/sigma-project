@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="../styles/login.css">
+
+    <script src="../utils/jquery-3.7.1.js"></script>
+    <script src="../utils/paths.js"></script>
+    <script src="../utils/apiMethods.js"></script>
+
+    <script src="../scripts/login-page.js"></script>
 </head>
 <body>
 <div class="register">
+
     <p>Емеїл</p>
     <input id="email" type="email" placeholder="Впишіть свій емеїл">
     <br>
@@ -14,8 +21,9 @@
     <input id="password" type="password" placeholder="Придумай свій пароль">
     <br>
 
-    <button type="submit">Підтвердити</button>
+    <button type="button" id="login">Підтвердити</button>
 
 </div>
+
 </body>
 </html>
