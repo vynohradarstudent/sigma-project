@@ -32,6 +32,7 @@
 ## Приклад запитів: [fetch запити](fetch-examples.md)
 
 ### URL для запитів https://maker-time-server-6dc0ba9fb22f.herokuapp.com
+### URL Swagger-UI https://maker-time-server-6dc0ba9fb22f.herokuapp.com/swagger-ui/index.html
 
 ## Розподіл завдань та етапи реалізації
 ### Тиждень 1: Основна структура, авторизація та реєстрація
