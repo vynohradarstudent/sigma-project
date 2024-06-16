@@ -102,3 +102,18 @@ async function getAllGames() {
         });
     return await response.json();
 }
+
+
+async function getAllUsers(token) {
+    const response = await fetch(
+        GET_ALL_USERS_URL,
+        {
+            method: "GET",
+            headers: {
+                'Authorization': `Bearer ${token.accessToken}`,
+                "Content-Type": "application/json"
+            }
+        }
+    )
+    return await response.json();
+}
