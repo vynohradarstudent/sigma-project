@@ -1,0 +1,30 @@
+body {
+    background: rgb(80,80,80);
+    background: radial-gradient(circle, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    padding: 20px;
+    font-family: Verdana;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.actions button {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white
+}
+
+.actions button:hover {
+    background-color: #525252;
+}
+
+.actions button img {
+    width: 100%;
+    height: auto;
+}
