@@ -47,6 +47,8 @@ const GET_ALL_GAMES_URL = "https://maker-time-server-6dc0ba9fb22f.herokuapp.com/
  */
 const CREATE_GAME_URL = "https://maker-time-server-6dc0ba9fb22f.herokuapp.com/api/games/create";
 
+const UPDATE_GAME_URL = "https://maker-time-server-6dc0ba9fb22f.herokuapp.com/api/games/update";
+
 /**
  * URL для отримання інформації про гру за її ID.
  * GET запит на цей URL, з додаванням ID гри в кінці, повертає інформацію про конкретну гру.

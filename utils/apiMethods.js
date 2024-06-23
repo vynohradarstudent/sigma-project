@@ -117,3 +117,45 @@ async function getAllUsers(token) {
     )
     return await response.json();
 }
+
+async function getGameById(id){
+    const response = await fetch(
+        GET_GAME_BY_ID_URL + id,
+        {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }
+    )
+    return await response.json();
+}
+async function createGame(token, gameData) {
+    const response = await fetch(
+        CREATE_GAME_URL,
+        {
+            method: "POST",
+            headers: {
+                'Authorization': `Bearer ${token.accessToken}`,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(gameData)
+        }
+    );
+    return await response.json();
+}
+
+async function updateGame(token, gameData) {
+    const response = await fetch(
+        UPDATE_GAME_URL,
+        {
+            method: "PUT",
+            headers: {
+                'Authorization': `Bearer ${token.accessToken}`,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(gameData)
+        }
+    );
+    return await response.json();
+}
