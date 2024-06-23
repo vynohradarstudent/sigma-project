@@ -1,72 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    position: relative;
-   background: antiquewhite;
-}
-
-.game-container {
-    position: relative;
-}
-
-.game-details {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.carousel-container {  overflow: hidden;
-    height: 40%;
-}
-
-.carousel {
+.gameText{
+    font-family: "Times New Roman";
     display: flex;
-    width: 100%; /* Карусель будет состоять из четырех слайдов, поэтому ее ширина будет в 4 раза больше ширины родительского контейнера */
-    transition: transform 0.5s ease;
-    height: 450px;
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
+    align-items: center;
+    justify-content: start;
+    color: darkgreen;
 }
 
 
-.add-to-cart-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: green; /* Зеленый цвет кнопки */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+.imgGame{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 25%;
+    width: 35%;
 }
+body{
+height: 100vh;
+    background: radial-gradient(circle, rgba(227,221,224,1) 0%, rgba(11,11,11,1) 60%);;
+}
+.gameVideo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
-.add-to-cart-btn:hover {
-    background-color: darkgreen; /* Темно-зеленый цвет кнопки при наведении */
+}
+.button{
+    display: flex;
+    justify-content: end;
+    align-items: start;
 }
