@@ -159,3 +159,7 @@ async function updateGame(token, gameData) {
     );
     return await response.json();
 }
+
+/*
+{"id":34,"title":"Tavern Talk","description":"A cozy visual novel about running a tavern in a D&D-inspired fantasy! Gather rumors, serve magical drinks, and meet adventurers on a life-changing quest.","price":"10.99","releaseDate":"2024-06-23","titleImageUrl":"","screenshots":["https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2076140/ss_80198577768e7c73c2106cab993db394ed077e1e.600x338.jpg?t=1719047787","https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2076140/ss_889231f1f857e953e778046f90e530c3f5ecda75.600x338.jpg?t=1719047787","https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2076140/ss_547ac7063d48612343b3d3ad7aa0322ba6a85483.116x65.jpg?t=1719047787","https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2076140/ss_2bf010b4485b93e7da6a00e17b7518e7d32333ef.600x338.jpg?t=1719047787",""],"genres":[null,null,null]}
+ */
