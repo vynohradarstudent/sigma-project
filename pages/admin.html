@@ -37,30 +37,33 @@
     </div>
     <div class="games">
         <h1>Створити або редагувати гру</h1>
+        <div class="games-list">
+        </div>
         <div class="game-editor">
-            <input type="text" placeholder="Назва гри">
-            <input type="text" placeholder="Опис гри">
-            <input type="number" placeholder="Ціна гри">
-            <input type="text" placeholder="Назва гри">
-            <input type="text" placeholder="Посилання на головну картинку">
-            <input type="text" placeholder="Посилання на скріншот №1">
-            <input type="text" placeholder="Посилання на скріншот №2">
-            <input type="text" placeholder="Посилання на скріншот №3">
-            <input type="text" placeholder="Посилання на скріншот №4">
-            <input type="text" placeholder="Посилання на скріншот №5">
-            <select>
+            <input type="text" id="game-title" placeholder="Назва гри">
+            <textarea id="game-description" name="Опис гри" cols="30" rows="10" placeholder="Опис гри"></textarea>
+            <input type="number" id="game-price" placeholder="Ціна гри">
+            <input type="text" id="game-main-image" placeholder="Посилання на головну картинку">
+            <input type="text" id="game-screenshot1" placeholder="Посилання на скріншот №1">
+            <input type="text" id="game-screenshot2" placeholder="Посилання на скріншот №2">
+            <input type="text" id="game-screenshot3" placeholder="Посилання на скріншот №3">
+            <input type="text" id="game-screenshot4" placeholder="Посилання на скріншот №4">
+            <input type="text" id="game-screenshot5" placeholder="Посилання на скріншот №5">
+            <select id="game-genre1">
                 <option>Оберіть жанр №1</option>
             </select>
-            <select>
+            <select id="game-genre2">
                 <option>Оберіть жанр №2</option>
             </select>
-            <select>
+            <select id="game-genre3">
                 <option>Оберіть жанр №3</option>
             </select>
         </div>
-        <button>Редагувати існуючу гру</button>
+        <button id="edit-game-button">Редагувати існуючу гру</button>
         <button class="back">Назад</button>
+        <button id="save-game-button">Продовжити</button>
     </div>
+
     <link rel="stylesheet" href="../styles/footer.css">
     <footer>
         <div class="container">

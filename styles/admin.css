@@ -37,3 +37,14 @@ body {
 .games {
     display: none;
 }
+
+.game-editor {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+
+input, select{
+    margin: 5px 0;
+}
