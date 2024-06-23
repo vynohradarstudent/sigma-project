@@ -1,31 +1,119 @@
-.gameText{
-    font-family: "Times New Roman";
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color: #171a21;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: start;
-    color: darkgreen;
 }
 
+header h1 {
+    font-size: 28px;
+}
 
-.imgGame{
+nav ul {
+    list-style-type: none;
     display: flex;
-    align-items: start;
-    justify-content: start;
-    height: 25%;
-    width: 35%;
 }
-body{
-height: 100vh;
-    background: radial-gradient(circle, rgba(227,221,224,1) 0%, rgba(11,11,11,1) 60%);;
-}
-.gameVideo{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
 
+nav ul li {
+    margin-right: 20px;
 }
-.button{
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
     display: flex;
-    justify-content: end;
-    align-items: start;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.game-cover img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.game-description {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #171a21;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px; }
+
+.game-cover img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.game-description {
+    flex: 1;
+}
+
+/* Стилі для кнопки */
+#cart-button {
+    background-color: #4CAF50; /* зелений колір кнопки */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px; /* Розміщуємо кнопку внизу відносно батьківського контейнера */
+    right: 20px; /* Розміщуємо кнопку справа відносно батьківського контейнера */
+}
+
+#cart-button:hover {
+    background-color: #388e3c; /* темно-зелений колір при наведенні */
 }
