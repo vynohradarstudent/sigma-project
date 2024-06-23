@@ -4,23 +4,62 @@
     <meta charset="UTF-8">
     <title>Sigma-Project Admin</title>
     <link rel="stylesheet" href="../styles/admin.css">
+
+    <script src="../utils/jquery-3.7.1.js"></script>
+    <script src="../utils/paths.js"></script>
+    <script src="../utils/apiMethods.js"></script>
+
+    <script src="../scripts/admin-page.js"></script>
 </head>
 <body>
     <h1>Адмін панель Sigma-project</h1>
     <div class="actions">
-        <button>
+        <button class="ban-button">
             <img src="../images/ban.png" alt="Зображення">
             <p class="margin-top">Видалити користувача</p>
         </button>
-        <button>
+        <button class="games-button">
             <img src="../images/game.png" alt="Зображення">
             Редагувати доступні ігри
         </button>
-        <button>
+        <button class="genres-button">
             <img src="../images/document.png" alt="Зображення">
             Редактор жанрів
         </button>
 
+    </div>
+    <div class="ban">
+        <h1>Оберіть користувача, якого хочете заблокувати</h1>
+        <div class="users">
+
+        </div>
+        <button class="back">Назад</button>
+    </div>
+    <div class="games">
+        <h1>Створити або редагувати гру</h1>
+        <div class="game-editor">
+            <input type="text" placeholder="Назва гри">
+            <input type="text" placeholder="Опис гри">
+            <input type="number" placeholder="Ціна гри">
+            <input type="text" placeholder="Назва гри">
+            <input type="text" placeholder="Посилання на головну картинку">
+            <input type="text" placeholder="Посилання на скріншот №1">
+            <input type="text" placeholder="Посилання на скріншот №2">
+            <input type="text" placeholder="Посилання на скріншот №3">
+            <input type="text" placeholder="Посилання на скріншот №4">
+            <input type="text" placeholder="Посилання на скріншот №5">
+            <select>
+                <option>Оберіть жанр №1</option>
+            </select>
+            <select>
+                <option>Оберіть жанр №2</option>
+            </select>
+            <select>
+                <option>Оберіть жанр №3</option>
+            </select>
+        </div>
+        <button>Редагувати існуючу гру</button>
+        <button class="back">Назад</button>
     </div>
     <link rel="stylesheet" href="../styles/footer.css">
     <footer>
