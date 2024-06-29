@@ -3,6 +3,7 @@
     padding: 0;
 }
 header{
+    user-select: none;
     height: 100px;
 display: flex;
     flex-direction: row;
@@ -64,4 +65,10 @@ input::placeholder {
     gap: 30px;
     display: flex;
     flex-direction: row;
+}
+header a{
+    text-decoration: none;
+    list-style: none;
+    color: limegreen;
+
 }
